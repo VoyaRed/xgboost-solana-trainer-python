@@ -44,7 +44,9 @@ model = xgb.XGBClassifier(
     random_state=42
 )
 
-model.fit(X_train, y_train)
+
+model.fit(X_train.values, y_train.values)
+
 
 # 6. Evaluate Performance
 preds = model.predict(X_test)
