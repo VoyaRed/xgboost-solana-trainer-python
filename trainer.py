@@ -44,7 +44,6 @@ model = xgb.XGBClassifier(
     random_state=42
 )
 
-
 model.fit(X_train.values, y_train.values)
 
 
